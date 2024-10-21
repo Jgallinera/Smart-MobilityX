@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="CoarseFineLocation">
+
+    <!-- Permissions -->
+
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SmartMobilityX"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".LandingPage"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".LoginPage"
+            android:exported="true"/>
+
+        <activity
+            android:name=".SignUpPage"
+            android:exported="true"/>
+
+        <activity
+            android:name=".AdminSignInPage"
+            android:exported="true"/>
+
+        <activity
+            android:name=".AdminDashboard"
+            android:exported="true"/>
+
+        <activity
+            android:name=".ForgotPassword"
+            android:exported="true"/>
+
+        <activity
+            android:name=".VerificationCode"
+            android:exported="true"/>
+
+        <activity
+            android:name=".SetNewPassword"
+            android:exported="true"/>
+
+        <activity
+            android:name=".Maps"
+            android:exported="true"/>
+
+        <activity
+            android:name=".SelectVehicle"
+            android:exported="true"/>
+
+        <activity
+            android:name=".UserProfile"
+            android:exported="true"/>
+
+        <activity
+            android:name=".Payment"
+            android:exported="true"/>
+
+        <activity
+            android:name=".RideHistory"
+            android:exported="true"/>
+
+        <activity
+            android:name=".RentalOption"
+            android:exported="true"/>
+
+        <activity
+            android:name=".Confirmation"
+            android:exported="true"/>
+
+        <activity
+            android:name=".RideActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".RideConfirmed"
+            android:exported="true"/>
+
+        <activity
+            android:name=".ScannerActivity"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            android:theme="@style/zxing_CaptureTheme"/>
+
+        <!-- Google Play Services Version Meta-data -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="12451000"
+            tools:replace="android:value"/>
+
+        <!-- HTTP Legacy Library -->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false"/>
+
+        <!-- Google Maps API Key -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCzohJHRF1b1Yqq2K9p8iNgGR70D6U5q4U"/>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

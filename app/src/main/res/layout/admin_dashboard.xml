@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".AdminDashboard">
+
+    <!-- Main Content Layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <!-- Hamburger Menu Button -->
+        <ImageButton
+            android:id="@+id/hamburgerMenuButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_hamburger_menu"
+            android:contentDescription="@string/hamburger_menu"/>
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Smart MobilityX Users"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <!-- RecyclerView for users list -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/usersRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="650dp"
+            android:layout_below="@id/titleTextView"
+            android:layout_marginTop="16dp"
+            android:clipToPadding="false"
+            android:paddingBottom="80dp" />
+    </RelativeLayout>
+
+    <!-- Sidebar (Drawer) -->
+    <LinearLayout
+        android:id="@+id/sidebar"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:orientation="vertical"
+        android:background="#227442"
+        android:padding="16dp">
+
+        <!-- User Account Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="24dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="8dp"
+            android:gravity="center_vertical">
+        </LinearLayout>
+
+        <!-- List of Users -->
+        <TextView
+            android:id="@+id/listofuser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/listofusers"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#227442"
+            android:fontFamily="@font/poppins"
+            android:drawableLeft="@drawable/ic_users"
+            android:drawablePadding="15dp"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- Ride History -->
+        <TextView
+            android:id="@+id/rideHistoryButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ride_history"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#227442"
+            android:fontFamily="@font/poppins"
+            android:drawableLeft="@drawable/ic_ride_history"
+            android:drawablePadding="15dp"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- Payments History -->
+        <TextView
+            android:id="@+id/paymentsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/payment"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#227442"
+            android:fontFamily="@font/poppins"
+            android:drawableLeft="@drawable/ic_payment"
+            android:drawablePadding="15dp"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- Logout Button -->
+        <TextView
+            android:id="@+id/logoutButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/logout"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/button_background"
+            android:clickable="true"
+            android:drawableLeft="@drawable/ic_logout"
+            android:drawablePadding="15dp"
+            android:focusable="true"
+            android:fontFamily="@font/poppins_semibold"
+            android:padding="12dp"
+            android:textColor="#227442"
+            android:textSize="16sp" />
+    </LinearLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

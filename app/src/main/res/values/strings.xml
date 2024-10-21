@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">Smart MobilityX</string>
+    <string name="hamburger_menu">Open navigation drawer</string>
+    <string name="back">Back</string>
+
+    <!-- Sidebar -->
+    <string name="user_icon">User Icon</string>
+    <string name="smart_mobilityx_user">Smart MobilityX User</string>
+    <string name="selectvehicle">Select Vehicle</string>
+    <string name="map">Map</string>
+    <string name="payment">Payment</string>
+    <string name="ride_history">Ride History</string>
+    <string name="logout">Logout</string>
+
+    <!-- Sidebar - Admin Side -->
+    <string name="listofusers">List of Users</string>
+    <string name="deactaccs">Deactivated Accounts</string>
+
+    <!-- Sign Up Page -->
+    <string name="sign_up_title">Sign Up</string>
+    <string name="username_hint">Username</string>
+    <string name="email_hint">Email</string>
+    <string name="first_name_hint">First Name</string>
+    <string name="last_name_hint">Last Name</string>
+    <string name="phone_number_hint">Phone Number</string>
+    <string name="password_hint">Password</string>
+    <string name="confirm_password_hint">Confirm Password</string>
+    <string name="upload_license">Upload Driver\'s License</string>
+    <string name="terms_check_box">By signing up, I agree with the Terms of Use &amp; Privacy Policy</string>
+    <string name="sign_up_button">Sign Up</string>
+    <string name="sign_in_prompt">Already have an account? Sign in here</string>
+
+    <!-- Forgot Password -->
+    <string name="forgot_password">Forgot Password</string>
+    <string name="send_email_prompt">Enter your email address, and we will send a verification code to your email account.</string>
+    <string name="send_code">Send Code</string>
+
+    <!-- Verification Code -->
+    <string name="verification_code">Verification Code</string>
+    <string name="verificationprompt">Enter the verification code that we have sent to your provided email.</string>
+    <string name="verification_code_box">Verification Code Box</string>
+
+    <!-- Set New Password -->
+    <string name="set_new_password">Set New Password</string>
+    <string name="enterpassword_prompt">Enter your new password.</string>
+    <string name="new_password_hint">New Password</string>
+    <string name="confirm_new_password_hint">Confirm New Password</string>
+    <string name="savebutton">Save</string>
+
+    <!-- Select Vehicle -->
+    <string name="select_vehicle">Select Vehicle</string>
+    <string name="escooter">eScooter</string>
+    <string name="ebicycle">eBicycle</string>
+    <string name="escooter_description">eScooter Image</string>
+    <string name="ebicycle_description">eBicycle Image</string>
+
+    <!-- User Profile Page -->
+    <string name="user_profile">User Profile</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="email">Email</string>
+    <string name="edit_details">Edit Details</string>
+    <string name="save_details">Save</string>
+    <string name="deactivate_account">Deactivate Account</string>
+
+    <!-- Rental Options Page -->
+    <string name="choose_rental_option">Choose Rental Option</string>
+    <string name="standard_rental">Standard Rental</string>
+    <string name="for_pick_up">For Pick-Up</string>
+    <string name="vehicle_image">Vehicle Image</string>
+    <string name="rent_vehicle">Rent Vehicle</string>
+
+    <!-- QR Code Scanner Page -->
+    <string name="qr_code">QR Code Image</string>
+    <string name="access_lock">Access Lock</string>
+    <string name="end_ride">End Ride</string>
+    <string name="transit_note">You are in transit!</string>
+    <string name="access_lock_note">Navigate to the Omni App to access the lock.</string>
+
+
+    <!-- Payment Page -->
+    <string name="payment_method">Payment Methods</string>
+    <string name="add_paymentmethod">Add Payment Method</string>
+    <string name="payment_note">Smart MobilityX only accepts GCash payment for self pick-up vehicles and cash payments when dropping off the vehicle at a manned station.</string>
+
+</resources>

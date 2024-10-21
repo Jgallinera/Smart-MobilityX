@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#FFFFFF"
+    tools:context=".VerificationCode">
+
+    <!-- Verification Code Title -->
+    <TextView
+        android:id="@+id/verificationCodeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/verification_code"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <!-- Prompt -->
+    <TextView
+        android:id="@+id/verificationPrompt"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/verificationprompt"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/verificationCodeTitle" />
+
+    <!-- Verification Code Boxes -->
+    <LinearLayout
+        android:id="@+id/codeBoxesContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/verificationPrompt">
+
+        <EditText
+            android:id="@+id/codeBox1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/edit_text_background"
+            android:fontFamily="@font/poppins"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:maxLength="1"
+            android:contentDescription="@string/verification_code_box" />
+
+        <EditText
+            android:id="@+id/codeBox2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/edit_text_background"
+            android:fontFamily="@font/poppins"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:maxLength="1"
+            android:contentDescription="@string/verification_code_box" />
+
+        <EditText
+            android:id="@+id/codeBox3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/edit_text_background"
+            android:fontFamily="@font/poppins"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:maxLength="1"
+            android:contentDescription="@string/verification_code_box" />
+
+        <EditText
+            android:id="@+id/codeBox4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/edit_text_background"
+            android:fontFamily="@font/poppins"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:maxLength="1"
+            android:contentDescription="@string/verification_code_box" />
+
+        <EditText
+            android:id="@+id/codeBox5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/edit_text_background"
+            android:fontFamily="@font/poppins"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:maxLength="1"
+            android:contentDescription="@string/verification_code_box" />
+    </LinearLayout>
+
+    <!-- Resend Code TextView -->
+    <TextView
+        android:id="@+id/resendCodeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins"
+        android:text="Resend Code in 60s"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/codeBoxesContainer" />
+
+    <!-- Confirm Button -->
+    <Button
+        android:id="@+id/confirmButton"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#227442"
+        android:fontFamily="@font/poppins"
+        android:text="Confirm"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:padding="14dp"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/resendCodeTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
